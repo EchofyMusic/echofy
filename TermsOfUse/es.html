@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos de Uso - Echofy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1DB954;
+            --primary-dark: #1a9e4a;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+            --secondary-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            margin-bottom: 1rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://echofy.com/logo.png" alt="Echofy Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Términos de Uso</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Introducción</h2>
+            <p>Bienvenido a Echofy. Estos Términos de Uso rigen su uso de nuestro sitio web y servicios. Al acceder o utilizar nuestros servicios, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de los términos, no podrá acceder a nuestros servicios.</p>
+        </div>
+        
+        <div class="section">
+            <h2>2. Uso del Servicio</h2>
+            <p>Nuestro servicio le permite transmitir música, crear listas de reproducción e interactuar con otros usuarios. Usted acepta utilizar nuestro servicio solo para fines legales y de acuerdo con estos Términos. Usted acepta no:</p>
+            <ul>
+                <li>Utilizar nuestro servicio de cualquier manera que viole cualquier ley o regulación aplicable</li>
+                <li>Utilizar nuestro servicio para cualquier propósito que sea ilegal o esté prohibido por estos Términos</li>
+                <li>Intentar obtener acceso no autorizado a cualquier parte de nuestro servicio</li>
+                <li>Interferir o interrumpir el funcionamiento de nuestro servicio</li>
+                <li>Acosar, abusar o dañar a otra persona</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Responsabilidades de la Cuenta</h2>
+            <p>Para utilizar ciertas funciones de nuestro servicio, es posible que necesite crear una cuenta. Usted es responsable de:</p>
+            <ul>
+                <li>Mantener la confidencialidad de la información de su cuenta</li>
+                <li>Todas las actividades que ocurran bajo su cuenta</li>
+                <li>Notificarnos inmediatamente sobre cualquier uso no autorizado de su cuenta</li>
+                <li>Asegurarse de que la información de su cuenta sea precisa y esté actualizada</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Propiedad Intelectual</h2>
+            <p>El contenido disponible a través de nuestro servicio, incluyendo pero no limitado a música, texto, gráficos, logotipos y software, es propiedad de Echofy o sus licenciantes y está protegido por las leyes de derechos de autor y otras leyes de propiedad intelectual. No puede utilizar, reproducir, distribuir o crear obras derivadas de este contenido sin permiso expreso.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Suscripciones y Pagos</h2>
+            <p>Algunas funciones de nuestro servicio pueden requerir una suscripción de pago. Al suscribirse a nuestro servicio, usted acepta:</p>
+            <ul>
+                <li>Pagar todas las tarifas asociadas con su suscripción</li>
+                <li>Proporcionar información de facturación precisa</li>
+                <li>Autorizarnos a cobrar su método de pago por las tarifas de suscripción</li>
+                <li>Entender que las tarifas de suscripción no son reembolsables excepto según lo requiera la ley</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>6. Limitación de Responsabilidad</h2>
+            <p>En la medida máxima permitida por la ley, Echofy no será responsable por ningún daño indirecto, incidental, especial, consecuente o punitivo, o cualquier pérdida de ganancias o ingresos, ya sea incurrido directa o indirectamente, o cualquier pérdida de datos, uso, buena voluntad u otras pérdidas intangibles.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Cambios en los Términos</h2>
+            <p>Nos reservamos el derecho de modificar estos Términos en cualquier momento. Le notificaremos sobre cualquier cambio publicando los nuevos Términos en esta página. Su uso continuado de nuestro servicio después de dichos cambios constituye su aceptación de los nuevos Términos.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. Contáctenos</h2>
+            <p>Si tiene alguna pregunta sobre estos Términos, contáctenos en:</p>
+            <div class="contact-info">
+                <strong>Equipo Legal de Echofy</strong>
+                <p>Departamento Legal</p>
+                <p>Calle Echofy No: 123, Piso: -220</p>
+                <p>Besiktas, Estambul, Turquía</p>
+                <p>Correo electrónico: legal@echofy.site</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Estos Términos de Uso fueron actualizados por última vez el 15 de mayo de 2025.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

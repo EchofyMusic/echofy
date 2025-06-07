@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Echofy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1DB954;
+            --primary-dark: #1a9e4a;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+            --secondary-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            margin-bottom: 1rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://echofy.com/logo.png" alt="Echofy Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Gizlilik Politikası</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Topladığımız Bilgiler</h2>
+            <p>Hizmetlerimizi kullandığınızda çeşitli türlerde bilgi toplayabiliriz:</p>
+            <ul>
+                <li><strong>Kişisel Bilgiler:</strong> Adınız, e-posta adresiniz, ödeme bilgileriniz gibi bize doğrudan sağladığınız bilgiler.</li>
+                <li><strong>Kullanım Bilgileri:</strong> Hizmetlerimizle nasıl etkileşim kurduğunuzla ilgili bilgiler (dinlediğiniz şarkılar, oluşturduğunuz çalma listeleri, IP adresiniz, cihaz türünüz, tarayıcı türünüz).</li>
+                <li><strong>Çerezler ve Benzer Teknolojiler:</strong> Deneyiminizi geliştirmek ve hizmetlerimizi analiz etmek için çerezler ve benzer izleme teknolojileri kullanırız.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>2. Bilgilerinizi Nasıl Kullanırız?</h2>
+            <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanırız:</p>
+            <ul>
+                <li>Hizmetlerimizi sağlamak, sürdürmek ve iyileştirmek.</li>
+                <li>Deneyiminizi kişiselleştirmek (örneğin, müzik önerileri sunmak).</li>
+                <li>Ödemelerinizi işlemek.</li>
+                <li>Sizinle iletişim kurmak (güncellemeler, destek ve pazarlama mesajları dahil).</li>
+                <li>Hizmetlerimizi analiz etmek ve yasa dışı faaliyetleri önlemek.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Bilgi Paylaşımı</h2>
+            <p>Kişisel bilgilerinizi izniniz olmadan üçüncü taraflarla satmayız veya kiralamayız. Bilgilerinizi yalnızca aşağıdaki durumlarda paylaşabiliriz:</p>
+            <ul>
+                <li>Hizmet sağlayıcılarımızla (örneğin, ödeme işlemcileri, analiz sağlayıcıları).</li>
+                <li>Yasal yükümlülüklere uymak veya yasal taleplere yanıt vermek.</li>
+                <li>Haklarımızı, gizliliğimizi, güvenliğimizi veya mülkiyetimizi ve/veya sizin veya başkalarınınkini korumak.</li>
+                <li>Bir iş devri, birleşme veya varlık satışı durumunda.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Veri Güvenliği</h2>
+            <p>Kişisel bilgilerinizi yetkisiz erişime, kullanıma veya ifşaya karşı korumak için makul idari, teknik ve fiziksel güvenlik önlemleri alırız. Ancak, internet üzerinden hiçbir iletim yöntemi veya elektronik depolama yöntemi %100 güvenli değildir.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Haklarınız ve Seçenekleriniz</h2>
+            <p>Kişisel bilgilerinizle ilgili belirli haklara sahipsiniz. Bu haklar, verilerinize erişmeyi, bunları düzeltmeyi, silmeyi veya işlenmesini kısıtlamayı içerebilir. Pazarlama iletişimlerini almamayı da seçebilirsiniz. Bu haklarınızı kullanmak için lütfen bizimle iletişime geçin.</p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Çocukların Gizliliği</h2>
+            <p>Hizmetlerimiz 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz. Bir ebeveyn veya vasiyseniz ve çocuğunuzun bize kişisel bilgi verdiğini fark ederseniz, lütfen bizimle iletişime geçin.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Bu Politikadaki Değişiklikler</h2>
+            <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir önemli değişiklik durumunda sizi bilgilendireceğiz. Bu sayfayı periyodik olarak gözden geçirmenizi öneririz.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. Bize Ulaşın</h2>
+            <p>Bu Gizlilik Politikası veya veri uygulamalarımız hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:</p>
+            <div class="contact-info">
+                <strong>Echofy Gizlilik Ekibi</strong>
+                <p>E-posta: privacy@echofy.com</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Bu Gizlilik Politikası en son 15 Mayıs 2025 tarihinde güncellenmiştir.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

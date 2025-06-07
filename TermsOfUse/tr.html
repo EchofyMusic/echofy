@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanım Koşulları - Echofy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1DB954;
+            --primary-dark: #1a9e4a;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+            --secondary-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            margin-bottom: 1rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://echofy.com/logo.png" alt="Echofy Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Kullanım Koşulları</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Giriş</h2>
+            <p>Bu Kullanım Koşulları ("Koşullar"), Echofy ("biz", "bize", "bizim") tarafından sunulan web sitesi, mobil uygulamalar ve ilgili hizmetler (topluca "Hizmet") kullanımınızı düzenler. Hizmetlerimizi kullanarak, bu Koşulları ve Gizlilik Politikamızı kabul etmiş olursunuz.</p>
+        </div>
+        
+        <div class="section">
+            <h2>2. Hizmet Kullanımı</h2>
+            <p>Hizmetlerimizi yalnızca yasal amaçlarla ve bu Koşullara uygun olarak kullanabilirsiniz. Şunları yapmamayı kabul edersiniz:</p>
+            <ul>
+                <li>Yürürlükteki herhangi bir yerel, ulusal veya uluslararası yasayı veya düzenlemeyi ihlal etmek.</li>
+                <li>Herhangi bir yasa dışı, zararlı, tehdit edici, taciz edici, karalayıcı, müstehcen veya başka bir şekilde sakıncalı materyal iletmek veya yayınlamak.</li>
+                <li>Başkalarının haklarını (gizlilik ve tanıtım hakları dahil) ihlal etmek.</li>
+                <li>Hizmetlerimizin işleyişine müdahale etmek veya kesintiye uğratmak.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Hesaplar</h2>
+            <p>Hizmetlerimizin belirli özelliklerine erişmek için bir hesap oluşturmanız gerekebilir. Hesap bilgilerinizin (kullanıcı adı ve şifre dahil) gizliliğini korumaktan ve hesabınız altında gerçekleşen tüm faaliyetlerden siz sorumlusunuz. Herhangi bir yetkisiz kullanımı derhal bize bildirmeyi kabul edersiniz.</p>
+        </div>
+        
+        <div class="section">
+            <h2>4. Fikri Mülkiyet</h2>
+            <p>Hizmet ve orijinal içeriği, özellikleri ve işlevselliği Echofy ve lisans verenlerine aittir ve uluslararası telif hakkı, ticari marka, patent, ticari sır ve diğer fikri mülkiyet veya mülkiyet hakları yasalarıyla korunmaktadır.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Abonelikler ve Ödemeler</h2>
+            <p>Bazı hizmetlerimiz abonelik bazında sunulabilir. Bir abonelik satın alırsanız, geçerli abonelik ücretlerini ve vergileri ödemeyi kabul edersiniz. Ödemeler iade edilmez, yasalarca aksi belirtilmedikçe. Aboneliğinizi istediğiniz zaman iptal edebilirsiniz, ancak iptal bir sonraki fatura döneminin başında yürürlüğe girer.</p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Sorumluluğun Sınırlandırılması</h2>
+            <p>Yasaların izin verdiği azami ölçüde, Echofy, hizmetlerimizi kullanmanızdan veya kullanamamanızdan kaynaklanan dolaylı, arızi, özel, sonuçsal veya cezai zararlardan (kar kaybı, veri kaybı veya diğer maddi olmayan kayıplar dahil) sorumlu olmayacaktır.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Koşulların Değiştirilmesi</h2>
+            <p>Bu Koşulları zaman zaman kendi takdirimize bağlı olarak değiştirebiliriz. Değişiklikler yayınlandığı anda yürürlüğe girer. Değişikliklerden sonra Hizmetlerimizi kullanmaya devam etmeniz, değiştirilmiş Koşulları kabul ettiğiniz anlamına gelir.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. İletişim</h2>
+            <p>Bu Koşullar hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:</p>
+            <div class="contact-info">
+                <strong>Echofy Destek Ekibi</strong>
+                <p>E-posta: support@echofy.com</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Bu Kullanım Koşulları en son 15 Mayıs 2025 tarihinde güncellenmiştir.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Echofy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1DB954;
+            --primary-dark: #1a9e4a;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+            --secondary-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            margin-bottom: 1rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://echofy.com/logo.png" alt="Echofy Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Política de Privacidad</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Información que Recopilamos</h2>
+            <p>Recopilamos información para proporcionar mejores servicios a nuestros usuarios. Los tipos de información que recopilamos incluyen:</p>
+            <ul>
+                <li><strong>Información de la Cuenta:</strong> Cuando crea una cuenta, recopilamos su nombre, dirección de correo electrónico y contraseña.</li>
+                <li><strong>Información del Perfil:</strong> Puede elegir proporcionar información adicional para su perfil, como una foto de perfil, biografía o ubicación.</li>
+                <li><strong>Información de Uso:</strong> Recopilamos información sobre cómo utiliza nuestro servicio, incluyendo las canciones que escucha, las listas de reproducción que crea y sus interacciones con otros usuarios.</li>
+                <li><strong>Información del Dispositivo:</strong> Recopilamos información sobre los dispositivos que utiliza para acceder a nuestro servicio, incluyendo modelo de hardware, sistema operativo e identificadores únicos de dispositivos.</li>
+                <li><strong>Información de Ubicación:</strong> Con su permiso, podemos recopilar y procesar información sobre su ubicación precisa.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>2. Cómo Utilizamos su Información</h2>
+            <p>Utilizamos la información que recopilamos para:</p>
+            <ul>
+                <li>Proporcionar, mantener y mejorar nuestros servicios</li>
+                <li>Desarrollar nuevos servicios y funciones</li>
+                <li>Personalizar su experiencia</li>
+                <li>Comunicarnos con usted sobre nuestros servicios</li>
+                <li>Proteger contra el fraude y el abuso</li>
+                <li>Analizar y comprender cómo se utilizan nuestros servicios</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Compartir Información</h2>
+            <p>No compartimos su información personal con empresas, organizaciones o individuos fuera de Echofy excepto en los siguientes casos:</p>
+            <ul>
+                <li>Con su consentimiento</li>
+                <li>Con nuestros socios comerciales de confianza que nos ayudan a operar nuestro servicio</li>
+                <li>Por razones legales, como para cumplir con las leyes o responder a solicitudes legales</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Seguridad de Datos</h2>
+            <p>Trabajamos duro para proteger a nuestros usuarios del acceso no autorizado o la alteración, divulgación o destrucción no autorizada de la información que mantenemos. En particular:</p>
+            <ul>
+                <li>Ciframos nuestros servicios usando SSL</li>
+                <li>Revisamos nuestras prácticas de recopilación, almacenamiento y procesamiento de información</li>
+                <li>Restringimos el acceso a la información personal a empleados, contratistas y agentes de Echofy que necesitan conocer esa información</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>5. Sus Derechos y Opciones</h2>
+            <p>Usted tiene derecho a:</p>
+            <ul>
+                <li>Acceder a su información personal</li>
+                <li>Corregir información inexacta o incompleta</li>
+                <li>Eliminar su cuenta e información personal</li>
+                <li>Oponerse o restringir ciertos procesamientos de su información</li>
+                <li>Exportar sus datos</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>6. Privacidad de los Niños</h2>
+            <p>Nuestros servicios no están dirigidos a niños menores de 13 años. No recopilamos conscientemente información personal de niños menores de 13 años. Si nos enteramos de que hemos recopilado información personal de un niño menor de 13 años, eliminaremos esa información.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Cambios en esta Política</h2>
+            <p>Podemos cambiar esta política de privacidad de vez en cuando. Publicaremos cualquier cambio en la política de privacidad en esta página y, si los cambios son significativos, proporcionaremos un aviso más prominente.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. Contáctenos</h2>
+            <p>Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en:</p>
+            <div class="contact-info">
+                <strong>Equipo de Privacidad de Echofy</strong>
+                <p>Departamento Legal</p>
+                <p>Calle Echofy No: 123, Piso: -220</p>
+                <p>Besiktas, Estambul, Turquía</p>
+                <p>Correo electrónico: privacy@echofy.site</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Esta Política de Privacidad fue actualizada por última vez el 15 de mayo de 2025.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

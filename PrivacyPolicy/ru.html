@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - Echofy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1DB954;
+            --primary-dark: #1a9e4a;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+            --secondary-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            margin-bottom: 1rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://echofy.com/logo.png" alt="Echofy Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Политика конфиденциальности</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Информация, которую мы собираем</h2>
+            <p>Мы собираем различные типы информации для предоставления и улучшения наших услуг:</p>
+            <ul>
+                <li><strong>Информация об учетной записи:</strong> имя, адрес электронной почты, пароль и другая информация, необходимая для создания и управления вашей учетной записью.</li>
+                <li><strong>Информация профиля:</strong> фотография профиля, биография и другие детали, которые вы решите предоставить.</li>
+                <li><strong>Информация об использовании:</strong> данные о том, как вы взаимодействуете с нашим сервисом, включая прослушанные треки, созданные плейлисты и предпочтения.</li>
+                <li><strong>Информация об устройстве:</strong> тип устройства, операционная система, уникальные идентификаторы устройства и настройки браузера.</li>
+                <li><strong>Информация о местоположении:</strong> общее местоположение, основанное на вашем IP-адресе или настройках устройства.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>2. Как мы используем вашу информацию</h2>
+            <p>Мы используем собранную информацию для:</p>
+            <ul>
+                <li>Предоставления, поддержания и улучшения наших услуг</li>
+                <li>Разработки новых функций и продуктов</li>
+                <li>Персонализации вашего опыта</li>
+                <li>Анализа использования наших услуг</li>
+                <li>Защиты от мошенничества и обеспечения безопасности</li>
+                <li>Связи с вами по поводу вашей учетной записи или наших услуг</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Обмен информацией</h2>
+            <p>Мы не продаем вашу личную информацию третьим лицам. Мы можем делиться вашей информацией в следующих случаях:</p>
+            <ul>
+                <li>С вашего согласия</li>
+                <li>С поставщиками услуг, которые помогают нам в работе нашего сервиса</li>
+                <li>Для соблюдения юридических обязательств</li>
+                <li>Для защиты наших прав и безопасности</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Безопасность данных</h2>
+            <p>Мы принимаем разумные меры для защиты вашей личной информации от несанкционированного доступа, изменения или уничтожения. Однако ни один метод передачи через Интернет или метод электронного хранения не является на 100% безопасным.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Ваши права и выбор</h2>
+            <p>В зависимости от вашего местоположения, вы можете иметь определенные права в отношении вашей личной информации, включая:</p>
+            <ul>
+                <li>Доступ к вашей личной информации</li>
+                <li>Исправление неточной информации</li>
+                <li>Удаление вашей информации</li>
+                <li>Ограничение обработки вашей информации</li>
+                <li>Переносимость данных</li>
+                <li>Возражение против обработки</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>6. Конфиденциальность детей</h2>
+            <p>Наши услуги не предназначены для детей младше 13 лет. Мы не собираем намеренно личную информацию от детей младше 13 лет. Если мы узнаем, что собрали личную информацию от ребенка младше 13 лет, мы немедленно удалим эту информацию.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Изменения в этой политике</h2>
+            <p>Мы можем обновлять эту политику конфиденциальности время от времени. Мы уведомим вас о любых изменениях, разместив новую политику конфиденциальности на этой странице.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. Свяжитесь с нами</h2>
+            <p>Если у вас есть вопросы о этой политике конфиденциальности, пожалуйста, свяжитесь с нами:</p>
+            <div class="contact-info">
+                <strong>Команда конфиденциальности Echofy</strong>
+                <p>Отдел конфиденциальности</p>
+                <p>Улица Echofy №: 123, Этаж: -220</p>
+                <p>Бешикташ, Стамбул, Турция</p>
+                <p>Электронная почта: privacy@echofy.site</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Эта политика конфиденциальности была последний раз обновлена 15 мая 2025 года.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

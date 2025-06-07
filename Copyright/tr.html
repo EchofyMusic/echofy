@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telif Hakkı Politikası - Echofy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1DB954;
+            --primary-dark: #1a9e4a;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+            --secondary-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            margin-bottom: 1rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://echofy.com/logo.png" alt="Echofy Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Telif Hakkı Politikası</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Genel Politika</h2>
+            <p>Echofy, Dijital Milenyum Telif Hakkı Yasası ("DMCA") dahil olmak üzere geçerli telif hakkı yasalarına uyar. Telif hakkı ihlali iddialarına yanıt vermek politikamızdır. Başkalarının telif haklarını tekrar tekrar ihlal eden kullanıcıların hesaplarını feshedebiliriz.</p>
+        </div>
+        
+        <div class="section">
+            <h2>2. Telif Hakkı İhlali Bildirimi</h2>
+            <p>Eserinizin telif hakkını ihlal edecek şekilde kopyalandığına inanıyorsanız, lütfen aşağıdaki bilgileri içeren bir bildirimle Telif Hakkı Temsilcimize ulaşın:</p>
+            <ul>
+                <li>İhlal edildiği iddia edilen münhasır hakkın sahibi adına hareket etmeye yetkili kişinin fiziksel veya elektronik imzası.</li>
+                <li>İhlal edildiği iddia edilen telifli eserin bir tanımı.</li>
+                <li>İhlal edici olduğu iddia edilen materyalin bulunduğu yerin (URL veya diğer tanımlayıcı bilgiler) bir tanımı.</li>
+                <li>Adresiniz, telefon numaranız ve e-posta adresiniz gibi sizinle iletişim kurmamızı sağlayacak yeterli bilgiler.</li>
+                <li>İhtilaflı kullanımın telif hakkı sahibi, temsilcisi veya yasa tarafından yetkilendirilmediğine dair iyi niyetli bir inancınız olduğuna dair bir beyan.</li>
+                <li>Bildiriminizdeki bilgilerin doğru olduğuna ve yalan yere yemin cezası altında, ihlal edildiği iddia edilen münhasır hakkın sahibi olduğunuza veya sahibi adına hareket etmeye yetkili olduğunuza dair bir beyan.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Telif Hakkı Temsilcisi</h2>
+            <p>Telif hakkı ihlali iddialarına ilişkin bildirimler aşağıdaki adrese gönderilmelidir:</p>
+            <div class="contact-info">
+                <strong>Echofy Telif Hakkı Temsilcisi</strong>
+                <p>Hukuk Departmanı</p>
+                <p>Echofy Sokak No: 123, Kat: -220</p>
+                <p>Beşiktaş, İstanbul, Türkiye</p>
+                <p>E-posta: copyright@echofy.site</p>
+            </div>
+            <p><em>Lütfen unutmayın: Bu iletişim bilgileri yalnızca telif hakkı ihlali bildirimleri içindir. Diğer tüm sorular (örneğin, teknik destek, hesap sorunları) destek kanallarımıza yönlendirilmelidir.</em></p>
+        </div>
+        
+        <div class="section">
+            <h2>4. Karşı Bildirim</h2>
+            <p>Materyalinizin yanlışlıkla veya yanlış tanımlama sonucu kaldırıldığına veya erişiminin engellendiğine inanıyorsanız, Telif Hakkı Temsilcimize bir karşı bildirimde bulunabilirsiniz. Karşı bildirimde bulunma süreci hakkında daha fazla bilgi için lütfen yasal danışmanınıza başvurun veya DMCA metnini inceleyin.</p>
+        </div>
+        
+        <div class="footer">
+            <p>Bu Telif Hakkı Politikası en son 15 Mayıs 2025 tarihinde güncellenmiştir.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 
